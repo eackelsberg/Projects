@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+	int a, b, c;
+    int min, max;
+    cin >>a >>b >>c;
+    min = (a<b)? a:b;
+    min = (min<c)? min:c;
+    max = (a>b)? a:b;
+    max = (max>c)? max:c;
+    int sum=a+b+c;
+    cout <<sum-max-min;
+    return 0;
+}
